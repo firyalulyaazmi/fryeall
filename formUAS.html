@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Form</title>
+    <title>Form Pendaftaran</title>
     <link rel="stylesheet" href="UAS.css">
 </head>
 <body>
@@ -12,36 +12,47 @@
         <img src="https://logos-world.net/wp-content/uploads/2020/12/Hogwarts-Emblem.png"
              alt="Hogwarts Logo"
              class="hogwarts-logo">
-        <h1>Join Hogwarts</h1>
+        <h1>Pendaftaran Siswa Baru</h1>
     </div>
 </header>
 
 <nav class="menu">
-    <a href="halamanUAS.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="aboutUAS.html">Tentang</a>
     <a href="galleryUAS.html">Gallery</a>
     <a href="formUAS.html" class="active">Form</a>
 </nav>
 
-<section class="content form-section">
+<section class="form-section">
     <form class="form-card">
-        <h2>Registration</h2>
+        <h2>Pendaftaran Calon Penyihir Hogwarts</h2>
 
-        <label>Nama</label>
-        <input type="text" required>
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Masukkan nama lengkap" required>
 
         <label>Email</label>
-        <input type="email" required>
+        <input type="email" placeholder="contoh@email.com" required>
+
+        <label>Jenis Kelamin</label>
+        <select required>
+            <option value="">-- Pilih --</option>
+            <option>Laki-laki</option>
+            <option>Perempuan</option>
+        </select>
 
         <label>Pilih Asrama</label>
-        <select>
+        <select required>
+            <option value="">-- Pilih Asrama --</option>
             <option>Gryffindor</option>
             <option>Slytherin</option>
             <option>Ravenclaw</option>
             <option>Hufflepuff</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <label>Alasan Masuk Hogwarts</label>
+        <textarea placeholder="Tuliskan alasan Anda..." required></textarea>
+
+        <button type="submit">Daftar Sekarang</button>
     </form>
 </section>
 
